@@ -1,0 +1,471 @@
+body {
+  background-image: linear-gradient(to left,#222222, #262626, #364405);
+  background-color: #222222;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #eaeaea;
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+input[type="submit"], button[type="button"] {
+  border: none;
+  display: block;
+  background-color: #8bc406;
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px 14px 6px 14px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+input[type="submit"]:hover, button[type="button"]:hover {
+  background-color: #9fdf0b;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+input[type="text"],
+input[type="password"] {
+  color: #000000;
+  border: 1px solid #c2c0ca;
+  border-radius: 4px;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 5px;  
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+
+textarea {
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+textarea::placeholder{
+  text-align: right;
+}
+
+select {
+  height: 24px;
+  border-radius: 4px;
+}
+
+.error {
+  color: rgb(255, 80, 80);
+  font-size: 1.0rem;
+  font-family: "Open Sans", sans-serif;
+  display: inline;
+  margin-left: 10px;
+}
+
+#header {
+  background-image: linear-gradient(to left,#222222, #262626, #354109);
+  background-color: #222222;
+  position: fixed;
+  font-size: 1.3rem;
+  top: 0;
+  margin: auto;
+  height: 100px;
+  width: 90%;
+  display: block;
+  transition: top 1s;
+  z-index: 1;
+}
+
+#top {
+  height: 90px;
+}
+
+#usermenu {
+  float: right;
+  margin-top: 15px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1420px){
+  #ctf-navbar{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  #usermenu, #add-btn, #ctf-navbar, #edit-btn,
+  #search-input, #search-btn{
+    display: none;
+  }
+}
+
+/*Dropdown button Usermenu */
+.drop-btn {
+  border: none;
+  cursor: pointer;
+  background-color: #222222;
+}
+.dropdown-content {
+  display: none;
+  background-color: #333333;
+  width: 150px;
+  float: right;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px 0px #000000;
+  font-size: 1.1rem;
+  font-weight: normal;
+  z-index: 1;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+.dropdown-content a:first-child{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.dropdown-content a:last-child{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dropdown-content a:hover {
+  background-color: #555555; 
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+
+/*Navigation bar */
+#navbar {
+  background-color: #111111;
+  position: fixed;
+  width: 90%;
+  border-radius: 8px;
+  z-index: -1;
+  box-shadow: 0px 2px 1px 0px #000000;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 35px 10px 35px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#navbar a:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#navbar a:hover {
+  background-color: #252525;
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+#navbar a.active {
+  background-color: #b5e700;
+  color: #000000;
+}
+
+/* Page content */
+#content {
+  margin-top: 125px;
+  padding: 20px;
+}
+
+#clear-btn, #cancel-btn {
+  background-color: #cccccc; 
+  margin-left:12px;
+}
+
+#clear-btn:hover, #cancel-btn:hover{
+  background-color: #eeeeee;
+  transition: all 0.5s ease; 
+}
+
+.edit {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.edit:hover {
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+
+#comments-container{
+  border-top: 2px solid #b3ff00; 
+  width: 70%; 
+  margin-top: 40px;
+}
+
+.comment {
+  border-bottom: 2px solid #b3ff00;
+  padding: 10px;
+}
+
+#welcome-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /*columns: image, div */
+  grid-gap: 100px;  /*spacing between image and div */
+}
+
+#ctf-navbar{
+  height: 410px;
+  width: 18%;
+  float: left;
+  font-weight: bold;
+  padding: 0px 0px 0px 30px;
+  background-image: linear-gradient(to left,#2c2c2c, #313622, #343f0f);
+  background-color: #333333;
+  margin: 10px 30px 0px 30px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+
+
+#ctf-navbar p{
+  width: fit-content;
+  background-color: #2f2f2f;
+  padding: 6px 8px 6px 8px;
+  border-radius: 6px;
+  margin: 4px 0px 12px 0px;
+  box-shadow: 0px 2px 2px 0px #111111;
+}
+
+#ctf-navbar p:hover{
+  cursor: pointer;
+  background-color: #3f3f3f;
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+
+#ctf-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 73%;
+  margin-top: 4px;
+}
+
+#ctf-container a{
+  padding-left: 20px;
+  background-color: #333333;
+  margin: 5px;
+  border-radius: 18px;
+  color: #eaeaea;
+  text-decoration: none;
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+
+#ctf-container a:hover{
+  cursor: pointer;
+  background-color: #444444;
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+
+#ctf-container a.attempedCTF{
+  cursor: pointer;
+  background-color: #8adb20;
+  color: #333333;
+  opacity: 30%;
+  transition: all 0.5s ease;
+}
+
+#ctf-container a.attempedCTF:hover{
+  cursor: pointer;
+  background-color: #87d40b;
+  color: #111111;
+  opacity: 60%;
+  transition: all 0.5s ease;
+}
+
+.pagination{
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 40%;
+  text-align: center;
+}
+.pagination a{
+  background-color: #333333;
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 3px;
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+.pagination a:hover{
+  background-color: #666666;
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+.pagination a.active{
+  color: #111111;
+  background-color: #9bdd00;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+#search-input {
+  height: 12px;
+  width: 300px;
+  margin-right: 4px;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+
+#key-input {
+  height: 10px;
+  width: 300px;
+  margin: 3px 3px 0px 0px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#ctfAttempt-container {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 28% 52% 15%;
+  height: 340px;
+  width: 63%;
+  background-color: #2c2c2c;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 30px 70px 40px 70px;
+  border-radius: 40px;
+}
+
+#ctfAttempt-container div {
+  padding: 0px 10px 0px 10px;
+}
+
+#edit-container {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 28% 58% 14%;
+  height: 360px;
+  width: 65%;
+  background-color: #333333;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 20px 50px 30px 50px;
+  border-radius: 40px;
+}
+
+#edit-container div {
+  padding: 0px 10px 0px 10px;
+}
+ 
+
+#download-ctf, #show-hint {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #94d300;
+}
+#download-ctf:hover, #show-hint:hover {
+  color: #b3ff00;
+  transition: all 0.5s ease;
+}
+
+#correct-key{
+  font-weight: bold;
+  color: #b3ff00;
+}
+
+#incorrect-key{
+  font-weight: bold;
+  color: #ff3232;
+}
+
+#add-btn, #edit-btn{
+  margin: 0px 12px 0px 6px;
+  padding: 6px 12px 7px 12px;
+  background-color: #a4e000;
+  color: #222222;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0px 2px 2px 0px #000000;
+}
+
+#add-btn:hover, #edit-btn:hover{
+  background-color: #bbff00;
+  color: #111111;
+  transition: all 0.5s ease;
+}
+
+#delete-btn{
+  font-weight: bold;
+  background-color: #e41d1d;
+  float: right;
+}
+#delete-btn:hover{
+  background-color: #fa4343;
+  transition: all 0.5s ease;
+}
+
+#achievement{
+  width: 68%;
+  float: right;
+}
+
+#achievement-container{
+  height: 160px;
+  border: #dddddd;
+  border-radius: 20px;
+  border-style: groove;
+}
+
+#avatar {
+  height: 300px;
+  width: 300px;
+  border-color: #ffffff;
+  border-style: groove;
+  border-radius: 50%;
+}
+
